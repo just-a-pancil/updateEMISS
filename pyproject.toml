@@ -1,0 +1,14 @@
+[project]
+name = "updateemiss"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "jupyter>=1.1.1",
+    "lab>=8.9",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.3",
+    "requests[socks]>=2.32.5",
+]

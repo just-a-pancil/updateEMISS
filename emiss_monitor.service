@@ -1,0 +1,27 @@
+[Unit]
+Description=EMISS Indicator Monitor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=emissmon
+Group=nogroup
+WorkingDirectory=/opt/emiss_monitor
+ExecStart=/opt/emiss_monitor/venv/bin/python3 /opt/emiss_monitor/monitor.py
+Environment="PYTHONUNBUFFERED=1"
+
+# Автоперезапуск при любом падении
+Restart=always
+RestartSec=10
+
+# Вывод в файл
+StandardOutput=append:/var/log/emiss_monitor.log
+StandardError=append:/var/log/emiss_monitor.log
+
+# Переменные среды (опционально, можно вынести токен сюда)
+# Environment="TELEGRAM_BOT_TOKEN=xxx"
+# Environment="TELEGRAM_CHAT_ID=yyy"
+
+[Install]
+WantedBy=multi-user.target

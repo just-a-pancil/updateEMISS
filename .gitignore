@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv
+.ssh
+*ipynb
+note.md
+.env
+uv.lock
+
+# ignore versions
+monitor_new.py  
+monitor_v5.py
+monitor.py
+emiss_loader_bot.py

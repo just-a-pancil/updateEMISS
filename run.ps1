@@ -1,0 +1,1 @@
+.\.venv\Scripts\python.exe monitor_v3.py
