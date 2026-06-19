@@ -99,14 +99,6 @@ ALERT_CHAT_ID=123456789
 * `TELEGRAM_CHAT_IDS` — список получателей уведомлений об обновлениях данных, через запятую;
 * `ALERT_CHAT_ID` — отдельный чат для технических ошибок.
 
-Пример для нескольких получателей:
-
-```env
-TELEGRAM_BOT_TOKEN=123456789:AAxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-TELEGRAM_CHAT_IDS=111111111,222222222,-1003333333333
-ALERT_CHAT_ID=111111111
-```
-
 ID групп и супергрупп Telegram часто начинаются с `-100`.
 
 ## Запуск
